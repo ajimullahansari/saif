@@ -1,0 +1,1070 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a, img {
+    outline: none;
+    text-decoration: none;
+    border: none;
+}
+body {
+    font: 70% 'Open Sans';
+    background: #88bfeb ;
+}
+header, footer, aside, nav, article, section, figcaption, video {
+    display: block;
+}
+#main {
+    height: auto;
+    width: 910px;
+    margin: 0 auto;
+    position: relative;
+}
+.border-right {
+    border-right: 1px solid #FFF;
+}
+h1 {
+    font: 600 1.6em 'Open Sans';
+    color: #006b9c;
+    margin-bottom: 15px;
+}
+.h1-style {
+    font: 600 1.6em 'Open Sans' !important;
+    color: #006b9c;
+    margin-bottom: 13px;
+}
+h2, h3, h4, h5, h6 {
+    font: 300 1.3em 'Open Sans';
+    color: #16acc8;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+p, .mock-p {
+    font: 300 1em/20px 'Open Sans';
+    color: #666;
+    margin-bottom: 15px;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p-space, .form-p {
+    margin-bottom: 0px;
+}
+#buttons ul, #pres-buttons ul, .pres-examples ul, .pres-examples-voiceover ul, nav ul, #news-sidebar ul {
+    list-style-type: none;
+}
+#buttons li, #pres-buttons li, .pres-examples li, .pres-examples-voiceover li, nav li, #social-links li {
+    display: inline;
+}
+/* Header Styles */
+/* --- FINAL REFINED FIXED HEADER --- */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    /* Screenshot ke hisab se exact blue color */
+    background-color: #089add !important; 
+    height: auto !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Header ke andar ka content center karne ke liye */
+.topheader, .container {
+    width: 910px; /* Aapke content ki asli width */
+    margin: 0 auto !important;
+    float: none !important;
+    display: block;
+    text-align: center;
+}
+
+/* Logo Fix: Stretch kam kiya aur menu ke barabar rakha */
+.logo {
+    width: 100%;
+    /* margin: 5px auto !important; */
+    margin-top: 5px !important;
+    margin-bottom: 2px !important;
+    display: block;
+    float: none !important;
+}
+
+.logo img {
+    width: 100%; /* Screenshot ke hisab se width adjust ki */
+    max-width: 910px !important;
+    height: auto;
+    max-height: 60px; /* Logo ki height purani wali rakhi */
+    display: inline-block;
+    margin: 0 !important;
+}
+
+/* Menu Fix: Logo ke niche center mein */
+header .container {
+    background: transparent !important;
+}
+
+.menu {
+    display: inline-block !important;
+    float: none !important;
+    margin-top: 0%;
+    /* margin-bottom: 10px; */
+}
+.menu li a {
+    color: #ffffff !important; /* Text ka color */
+}
+
+
+/* Content Cutting Fix: Isse aapka niche ka image nahi katega */
+body {
+    padding-top: 170px !important; /* Margin badha diya taaki content niche se shuru ho */
+}
+
+/* Scrolling Overlap Fix: Taki content header ke peeche chhup jaye */
+#main {
+    position: relative;
+    z-index: 1;
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 912px) {
+    .topheader, .container {
+        width: 100%;
+    }
+    body {
+        padding-top: 160px !important;
+    }
+}
+/* Nav Styles */
+nav {
+    width: 880px;
+    float: left;
+}
+nav li a {
+    height: 38px;
+    float: left;
+    text-indent: -9999px;
+}
+#nav1 a {
+    width: 62px;
+}
+#nav2 a {
+    width: 82px;
+}
+#nav3 a {
+    width: 125px;
+}
+#nav4 a {
+    width: 118px;
+}
+#nav5 a {
+    width: 123px;
+}
+#nav6 a {
+    width: 105px;
+}
+#nav7 a {
+    width: 98px;
+}
+#nav8 a {
+    width: 81px;
+}
+#nav9 a {
+    width: 86px;
+}
+/* Top Area Styles */
+#top-area {
+    height: auto;
+    width: 910px;
+    background: #FFF;
+    border: 1px solid #c5c5c5;
+    padding-bottom: 5px;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    float: left;
+}
+#video, #map, #header-image {
+    height: 357px;
+    width: 868px;
+    margin: 5px 0 0 5px;
+    float: left;
+}
+#video-new {
+    height: 369px;
+    width: 868px;
+    margin: 5px 0 0 5px;
+    float: left;
+}
+#video_wrapper {
+    float: left;
+}
+#map iframe, #video-new iframe {
+    border: 0;
+}
+#buttons {
+    height: 100px;
+    width: 868px;
+    background: url(../images/buttons.jpg) no-repeat;
+    margin: 5px 0 0 5px !important;
+    margin: 5px 0 0 2px;
+    float: left;
+}
+#buttons li a {
+    height: 100px;
+    float: left;
+    text-indent: -9999px;
+}
+#button1 a, #button2 a, #button3 a {
+    width: 218px;
+}
+/* #button1 a:hover {
+    background: url(../images/buttons.jpg) no-repeat scroll 0px -100px;
+}
+#button2 a:hover {
+    background: url(../images/buttons.jpg) no-repeat scroll -218px -100px;
+}
+#button3 a:hover {
+    background: url(../images/buttons.jpg) no-repeat scroll -436px -100px;
+}
+#button4 a {
+    width: 214px;
+}
+#button4 a:hover {
+    background: url(../images/buttons.jpg) no-repeat scroll -654px -100px;
+} */
+#pres-buttons {
+    height: 134px;
+    width: 868px;
+    background: url(../images/presenter-buttons.jpg) no-repeat;
+    margin: 5px 0 0 5px;
+    float: left;
+}
+#pres-buttons li a {
+    height: 134px;
+    float: left;
+    text-indent: -9999px;
+}
+#pres-button1 a, #pres-button2 a {
+    width: 292px;
+}
+#pres-button1 a:hover {
+    background: url(../images/presenter-buttons.jpg) no-repeat scroll 0px -134px;
+}
+#pres-button2 a:hover {
+    background: url(../images/presenter-buttons.jpg) no-repeat scroll -292px -134px;
+}
+#pres-button3 a {
+    width: 284px;
+}
+#pres-button3 a:hover {
+    background: url(../images/presenter-buttons.jpg) no-repeat scroll -584px -134px;
+}
+#colorbox {
+    border: 1px solid #c5c5c5;
+}
+#colorbox, #cboxOverlay, #cboxWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+#cboxOverlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+}
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.cboxIframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+#cboxLoadingOverlay {
+    background: #FFF;
+}
+/* Text Area Styles */
+#text-area, #wide-text-area {
+    height: auto;
+    width: 910px;
+    overflow: hidden;
+}
+#promotions {
+    height: 100px;
+    width: 432px;
+    margin: 4px 1px 0 5px !important;
+    margin: 4px 1px 0 2px;
+    float: left;
+}
+.recent-client {
+    height: 98px;
+    width: 138px;
+    margin: 4px 0 0 5px;
+    border: 1px solid #CCC;
+    float: left;
+    width: 428px;
+}
+#text-box, #wide-text-box {
+    height: auto;
+    min-height: 1520px;
+    background: #FFF;
+    border: 1px solid #c5c5c5;
+    float: left;
+    padding: 18px 22px 15px;
+}
+#text-box {
+    width: 610px;
+}
+#wide-text-box {
+    width: 834px;
+}
+#text-box-left {
+    float: left;
+    width: 280px;
+    margin-right: 45px;
+}
+#text-box-left form {
+    margin-bottom: 10px;
+}
+#text-box-right {
+    float: left;
+    width: 280px;
+}
+.text-border ul, #text-box ul, #wide-text-box ul {
+    margin: 0 0 20px 15px;
+}
+#wide-text-box li, #text-box li {
+    font: 300 1em/20px 'Open Sans';
+    color: #000;
+}
+#contact-box {
+    height: 200px;
+    width: 210px;
+    background: #FFF;
+    border: 1px solid #c5c5c5;
+    float: right;
+    padding: 16px 18px 10px;
+}
+#contact-box ul {
+    list-style-type: none;
+}
+#contact-box li {
+    font: 600 1.1em/20px 'Open Sans';
+    color: #000;
+    margin-bottom: 1px;
+}
+.highlight {
+    color: #16acc8;
+    font-weight: 600;
+}
+#blog-area {
+    height: 351px;
+    width: 220px;
+    background: url(../images/social-area.jpg) no-repeat;
+    float: right;
+    margin-top: 4px;
+}
+#social-links {
+    height: 47px;
+    width: 214px;
+    background: url(../images/social.jpg) no-repeat;
+    float: right;
+    margin: 7px 13px 0 0;
+}
+#social-links li a {
+    height: 47px;
+    float: left;
+    text-indent: -9999px;
+}
+#social1 a, #social4 a {
+    width: 53px;
+}
+#social1 a:hover {
+    background: url(../images/social.jpg) no-repeat scroll 0px -47px;
+}
+#social2 a, #social3 a {
+    width: 54px;
+}
+#social2 a:hover {
+    background: url(../images/social.jpg) no-repeat scroll -53px -47px;
+}
+#social3 a:hover {
+    background: url(../images/social.jpg) no-repeat scroll -107px -47px;
+}
+#social4 a:hover {
+    background: url(../images/social.jpg) no-repeat scroll -161px -47px;
+}
+#blog-feed, #twitter-feed {
+    height: 160px;
+    width: 180px;
+    overflow: hidden;
+    margin: 10px 0 0 20px !important;
+    margin: 10px 0 0 10px;
+    float: left;
+}
+#blog-feed a, #twitter-feed a, #text-box a, #wide-text-box a, .example-text a {
+    color: #16acc8;
+}
+#blog-feed {
+    margin: 20px 0 0 20px !important;
+    margin: 20px 0 0 10px;
+}
+#twitter-feed {
+    height: 120px;
+    width: 140px;
+}
+#social-divider {
+    width: 135px;
+    border-bottom: 1px solid #000;
+    margin: 15px 0 0 20px !important;
+    margin: 15px 0 0 10px;
+    float: left;
+}
+.shr-bookmarks {
+    margin-left: -5px !important;
+}
+.socials {
+    height: 110px;
+}
+.like {
+    margin: 10px 0 5px 0;
+}
+.wpfblike {
+    margin-top: 10px;
+    float: left;
+}
+/* Preview Styles */
+#preview-area {
+    height: 51px;
+    width: 858px;
+    margin-top: 4px;
+    padding: 13px 0 0 22px;
+    overflow: hidden;
+}
+#preview-area form {
+    overflow: hidden;
+}
+#preview-form {
+    height: 25px;
+    width: 437px;
+    margin: 3px 0 0 343px;
+    padding-left: 5px;
+}
+#preview-submit {
+    margin-left: 10px;
+}
+/* Examples Styles */
+#examples {
+    height: 325px;
+    width: 878px;
+    background: #FFF;
+    border: 1px solid #c5c5c5;
+    margin-top: 4px;
+}
+.anythingSlider {
+    width: 826px;
+    height: 295px;
+    position: relative;
+    margin: 21px 0 0 24px;
+}
+.anythingSlider #wrapper {
+    height: 250px;
+    left: 53px;
+    margin: 20px 21px;
+    overflow: auto;
+    position: absolute;
+    width: 685px;
+}
+.anythingSlider #wrapper ul {
+    width: 32693px;
+    height: 238px;
+}
+.anythingSlider #wrapper ul li {
+    display: block;
+    float: left;
+    height: auto;
+    width: 682px;
+}
+.anythingSlider .arrow {
+    display: block;
+    height: 200px;
+    width: 67px;
+    text-indent: -9999px;
+    position: absolute;
+    top: 45px;
+    cursor: pointer;
+}
+.anythingSlider .forward {
+    background-position: 0 0;
+    right: -34px;
+}
+.anythingSlider .back {
+    background-position: -67px 0;
+    left: -30px;
+}
+.anythingSlider .forward:hover {
+    background-position: 0 -200px;
+}
+.anythingSlider .back:hover {
+    background-position: -67px -200px;
+}
+.example {
+    float: left;
+}
+.example-text {
+    width: 330px;
+    float: left;
+    margin: 20px 0 0 40px;
+}
+/* Footer Styles */
+footer {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 905px;
+    background: #1e5799;
+    background: -moz-linear-gradient(left, #1e5799 0%, #1d9fea 50%, #1e5799 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #1e5799 0%, #1d9fea 50%, #1e5799 100%);
+    background: linear-gradient(to right, #1e5799 0%, #1d9fea 50%, #1e5799 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#1e5799', GradientType=1);
+    border-top: 1px solid #c5c5c5;
+    margin-top: 4px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+}
+footer ul {
+    list-style-type: none;
+}
+footer h4 {
+    color: #006b9c;
+    font: 600 1.2em 'Open Sans';
+    margin-bottom: 10px;
+}
+#footer-content {
+    height: auto;
+    width: 880px;
+    margin: 0 auto;
+    color: #000;
+    padding: 22px 0 0 4px;
+    overflow: hidden;
+    font: 300 0.9em/20px 'Open Sans';
+    position: relative;
+}
+#footer-content a, form a, .custom-text a, #sitemap a {
+    color: #000;
+}
+#footer-content a:hover, form a:hover, .custom-text a:hover, #blog-feed a:hover, #twitter-feed a:hover, #sitemap a:hover, #text-box a:hover, #wide-text-box a:hover, .example-text a:hover {
+    color: #03F;
+}
+.footer-section {
+    width: 170px;
+    float: left;
+}
+footer .caption-text p {
+    color: #fff;
+}
+.footer-section-wide {
+    width: 435px;
+    float: right;
+    text-align: right;
+}
+.footer-section-wide ul li {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+}
+#footer-space {
+    margin-bottom: 20px;
+}
+.addthis {
+    position: absolute;
+    bottom: 5px;
+    right: 22px;
+}
+/* Contact Styles */
+.formstyle, .messagestyle {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 265px;
+}
+.messagestyle {
+    width: 269px !important;
+}
+.form-p img {
+    margin: 5px 0;
+}
+/* Presenter Profile Styles */
+.pres-profile, .custom-example {
+    height: auto;
+    width: 832px;
+    border: 1px solid #c5c5c5;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.pres-profile {
+    height: auto;
+}
+.text-border {
+    border: 1px solid #c5c5c5;
+    padding: 15px;
+    height: auto;
+}
+.pres-profile-left {
+    height: auto;
+    width: 215px;
+    float: left;
+    padding: 30px 20px 20px;
+}
+.pres-profile-left-voiceover {
+    height: auto;
+    width: 180px;
+    float: left;
+    padding: 30px 0 20px 20px;
+}
+.pres-profile-right {
+    height: auto;
+    width: 537px;
+    float: right;
+    padding: 25px 27px 25px 0;
+}
+.pres-profile-right-voiceover {
+    height: auto;
+    width: 605px;
+    float: right;
+    padding: 25px 27px 25px 0;
+}
+.pres-examples, .pres-examples-voiceover {
+    margin: 20px 0 0 0 !important;
+}
+.pres-examples li a {
+    height: 32px;
+    width: 107px;
+    text-indent: -9999px;
+    display: block;
+    float: left;
+    margin: 0 20px 10px 0;
+}
+.pres-examples-voiceover li a {
+    height: 32px;
+    width: 107px;
+    text-indent: -9999px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+.pres-examples li a:hover, .pres-examples-voiceover li a:hover {
+    background-position: 0 -32px;
+}
+/* Video Production Styles */
+#video-stages {
+    height: 73px;
+    width: 288px;
+    margin: 10px 0 0 -8px;
+}
+#video-example_wrapper, #nclarke-one_wrapper, #nclarke-two_wrapper, #budget_wrapper {
+    border: 1px solid #c5c5c5;
+    float: left;
+}
+/* Custom Videos Styles */
+.custom-example {
+    width: 568px !important;
+    padding: 20px;
+}
+.custom-text {
+    width: 568px;
+    margin-top: 20px;
+    float: left;
+}
+.client-logo, #nclarke-one_wrapper {
+    margin-bottom: 20px;
+}
+.view a {
+    height: 32px;
+    width: 88px;
+    background: url(../images/view-site.png) no-repeat;
+    float: left;
+    text-indent: -9999px;
+}
+.view a:hover {
+    background: url(../images/view-site.png) no-repeat scroll 0px -32px;
+}
+/* Packages Styles */
+.pack-section {
+    float: left;
+    margin-bottom: 20px;
+}
+.pack-box, .pack-box-gold {
+    width: auto;
+    min-width: 191px;
+    float: left;
+    border: 1px solid #CCC;
+    margin-right: 8px;
+}
+.pack-box-gold {
+    margin-right: 0px;
+}
+.pack-bronze, .pack-silver, .pack-gold, .pack-purple {
+    height: 22px;
+    width: auto;
+    color: #FFF;
+    padding: 3px 9px 0 8px;
+    font-size: 1.3em;
+}
+.pack-bronze {
+    background: #a8832b;
+}
+.pack-silver {
+    background: #c0c0c0;
+}
+.pack-gold {
+    background: #e0d527;
+}
+.pack-purple {
+    background: #713286;
+}
+.pack-text {
+    padding: 5px 8px 15px;
+    border-top: 1px solid #CCC;
+}
+.pack-text p, .pack-examples p {
+    margin-bottom: -5px;
+}
+.p-bold {
+    font: 600 1.1em/30px 'Open Sans';
+}
+.pack-examples, .pack-prices {
+    border-top: 1px solid #CCC;
+    padding: 5px 0 15px 8px;
+}
+.pack-prices p {
+    margin-bottom: -9px;
+    font: 600 1.3em 'Open Sans';
+}
+/* News Styles */
+.newswrap {
+    height: auto;
+    width: 568px;
+    border: 1px solid #CCC;
+    margin: 5px 0;
+    padding: 20px;
+    float: left;
+}
+.newswrap h2 {
+    margin-bottom: 15px;
+}
+.postwrap {
+    width: 430px;
+    margin-top: 10px;
+    float: left;
+}
+.postwrap-links {
+    float: left;
+}
+#news-sidebar {
+    height: auto;
+    width: 178px;
+    background: #FFF;
+    border: 1px solid #c5c5c5;
+    float: right;
+    padding: 16px 20px 10px;
+    margin-bottom: 4px;
+}
+#news-sidebar ul li {
+    margin-bottom: 15px;
+    color: #000;
+}
+#news-sidebar ul li a {
+    color: #000;
+}
+#news-sidebar ul li a:hover {
+    color: #CCC;
+}
+#news-sidebar ul li ul li {
+    list-style-type: disc;
+    margin: 0 0 5px 15px;
+}
+.wp-paginate, .wpfblike {
+    float: left;
+    margin: 10px 0 !important;
+}
+.thumbnail-image {
+    height: 80px;
+    width: 120px;
+    float: left;
+    margin: -5px 0 15px -5px;
+    padding: 10px 0 0 10px;
+}
+/* 404 Styles */
+.search-goog form {
+    margin: 10px 0 0 -15px;
+}
+#goog-wm-qt {
+    height: 20px;
+    width: 250px;
+    padding: 2px 5px;
+    margin-right: 10px;
+}
+/* Product Styles */
+.product-example {
+    height: 82px;
+    width: 278px;
+    margin: 0 0 10px -5px !important;
+    margin: 0 0 0px -5px;
+}
+.product-example a {
+    float: left;
+    height: 82px;
+    width: 112px;
+    margin-right: 7px;
+}
+.product-example p {
+    float: left;
+    width: 150px;
+}
+.product-example-title {
+    height: 18px;
+    width: 150px;
+    font: 300 1.1em 'Open Sans';
+    color: #16acc8;
+    margin: 12px 0 0px;
+    float: left;
+}
+.banner-nav {
+    float: right;
+    width: 168px;
+}
+.banner-nav ul {
+    font-size: 14px;
+    padding-top: 14px;
+}
+.banner-nav ul li {
+    margin: 4px 0;
+}
+table {
+    font-size: 12px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.hidden {
+    display: none;
+}
+.topheader {
+    width: 100%;
+}
+.logo {
+    float: left;
+    padding-top: 30px;
+}
+.topcontact {
+    float: right;
+    font-size: 36px;
+    color: white;
+    font: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+}
+/*** set the width and height to match your images **/
+#slideshow {
+    position: relative;
+    height: 250px;
+    clear: both;
+    width: 680;
+    float: left;
+}
+#slideshow IMG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    opacity: 0.0;
+}
+#slideshow IMG.active {
+    z-index: 10;
+    opacity: 1.0;
+}
+#slideshow IMG.last-active {
+    z-index: 9;
+}
+@media (max-width: 767px) {
+    body {
+        width: 100%;
+    }
+    #main {
+        width: 98%;
+    }
+    header {
+        width: 100%;
+    }
+    .topheader {
+        width: 100%;
+    }
+    .logo a img {
+        width: 100%;
+    }
+    .topcontact {
+        font-size: 24px;
+        padding-top: 0px;
+        text-align: right;
+        width: 100%;
+    }
+    .text-area {
+        width: 100%;
+    }
+    #text-area {
+        width: 100%;
+    }
+    #top-area {
+        width: 100%;
+    }
+    #promotions {
+        width: 97%;
+        height: auto !important;
+    }
+    #promotions a img {
+        width: 100%;
+    }
+    .recent-client {
+        width: 97%;
+        height:auto !important;
+    }
+    .recent-client a img {
+        width: 100%;
+    }
+    #slideshow {
+        width: 97%;
+        height: 100px;
+    }
+    #slideshow img {
+        width: 100%;
+        height: 100%;
+    }
+    .banner-nav {
+        width: 90%;
+    }
+    .banner-nav ul li a {
+        font-size: 12px;
+    }
+    #text-box {
+        width: 90%;
+    }
+    #contact-box {
+        width: 90%;
+    }
+    #social-links {
+        width: 90%;
+    }
+    
+    footer {
+        width: 100%;
+        display: block;
+    }
+    #footer-content {
+        width: 90%;
+    }
+    .footer-section {
+        width: 100%;
+        float: left;
+    }
+    .footer-section-wide {
+        width: 100%;
+        float: left
+    }
+    .footer-section-wide ul li {
+        font-size: 9px;
+    }
+}
+
+
+/* Style the WhatsApp icon */
+.whatsapp-icon {
+    position: fixed; /* Keeps the icon in place */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    width: 60px; /* Size of the icon */
+    height: 60px; /* Size of the icon */
+    background-color: #25D366; /* WhatsApp green */
+    color: white; /* Icon color */
+    border-radius: 50%; /* Makes it round */
+    display: flex; /* Centering the icon */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-size: 24px; /* Size of the icon */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adds shadow */
+    z-index: 1000; /* Keeps it above other content */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.whatsapp-icon:hover {
+    background-color: #128C7E; /* Darker green on hover */
+    transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+
+/* Style the WhatsApp icon */
+.whatsapp-icon {
+    position: fixed; /* Keeps the icon in place */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    width: 60px; /* Size of the icon */
+    height: 60px; /* Size of the icon */
+    border-radius: 50%; /* Make it round */
+    display: flex; /* Center the icon */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adds shadow */
+    z-index: 1000; /* Keeps it above other content */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.whatsapp-icon img {
+    width: 100%; /* Fill the container */
+    height: 100%; /* Fill the container */
+    border-radius: 50%; /* Make it round */
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+/* styles.css */
+
+/* Basic styling for the map container */
+.map-container {
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px; /* Adjust height as needed */
+    border: 0;
+}
+.d-flex{
+    display: flex;
+}
+.d-flex .highlight{
+    padding: 0 4px 0 0;
+}
+
+.guaranteeseal img{
+    margin-left:18px;
+}
+
+.footer-section-wide li, .footer-section-wide li a, .footer-section li, .footer-section li a{
+    color: white !important;
+}
+.footer-section-wide li a:hover, .footer-section a:hover{
+    color: blue !important;
+}
+
